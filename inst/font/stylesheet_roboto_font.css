@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto.eot');
+    src: url('Roboto.eot?#iefix') format('embedded-opentype'),
+         url('Roboto.woff2') format('woff2'),
+         url('Roboto.woff') format('woff'),
+         url('Roboto.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('RobotoLight.eot');
+    src: url('RobotoLight.eot?#iefix') format('embedded-opentype'),
+         url('RobotoLight.woff2') format('woff2'),
+         url('RobotoLight.woff') format('woff'),
+         url('RobotoLight.svg#roboto_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto Thin';
+    src: url('RobotoThin.eot');
+    src: url('RobotoThin.eot?#iefix') format('embedded-opentype'),
+         url('RobotoThin.woff2') format('woff2'),
+         url('RobotoThin.woff') format('woff'),
+         url('RobotoThin.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

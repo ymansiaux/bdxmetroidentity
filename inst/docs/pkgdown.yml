@@ -1,0 +1,13 @@
+pandoc: 2.3.1
+pkgdown: 1.6.1
+pkgdown_sha: ~
+articles:
+  a-installation-du-package: a-installation-du-package.html
+  ba-charte-ggplot2: ba-charte-ggplot2.html
+  bb-charte-rmarkdown: bb-charte-rmarkdown.html
+  bc-charte-shiny: bc-charte-shiny.html
+  c-roboto-font: c-roboto-font.html
+  d-picto: d-picto.html
+  zz-etat-de-l-art: zz-etat-de-l-art.html
+last_built: 2021-07-06T09:18Z
+

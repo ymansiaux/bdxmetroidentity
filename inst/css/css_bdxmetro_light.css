@@ -1,0 +1,307 @@
+/* Colors specifications */
+:root{
+  --regular-font-family: "Roboto";
+  --light-font-family: "Roboto Light";
+  --thin-font-family: "Roboto Thin";
+  --main-text-color: #292930;
+  --main-text-color-rgba: 41, 41, 48;
+  --secondary-text-color: #777777;
+  --background-color-page: white;
+  --brownish-grey: #777777;
+  --charcoal-grey: #292930;
+  --bright-blue: #0066ff;
+  --cerulean: #039ed2;
+  --seafoam-blue: #60ccb7;
+  --bubblegum-pink: #fd79da;
+  --warm-pink: #fd5072;
+  --pastel-orange: #fd994e;
+  --pastel-purple: #c4a5fd
+}
+
+/* Body */
+body {
+  background-color: var(--background-color-page);
+  font-family: var(--light-font-family);
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--main-text-color);
+}
+
+/* Author */
+.author {
+  font-family: var(--light-font-family);
+}
+
+/* Date */
+.date {
+  font-family: var(--light-font-family);
+}
+
+/* Title */
+h1 .title {
+  font-family: var(--regular-font-family);
+  font-size: 40px;
+  display: block;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  color: var(--main-text-color);
+}
+
+/* Headers */
+h1 {
+  font-family: var(--light-font-family);
+  font-size: 35px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--main-text-color);
+}
+
+h2 {
+  font-family: var(--regular-font-family);
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--main-text-color);
+}
+
+h3 {
+  font-family: var(--regular-font-family);
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--main-text-color);
+}
+
+h4 {
+  font-family: var(--regular-font-family);
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--secondary-text-color);
+}
+
+/* Anchors */
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  transition-property: background, color;
+  transition-duration: 1s;
+}
+
+a:link {
+  color: var(--cerulean);
+}
+
+a:visited {
+  color: var(--cerulean);
+}
+
+a:focus {
+  outline: none;
+  color: var(--cerulean);
+  text-decoration: none;
+}
+
+a:hover {
+  outline: none;
+  color: var(--cerulean);
+  text-decoration: none;
+}
+
+/* Code in text */
+code {
+  color: white;
+  background-color: var(--seafoam-blue);
+}
+
+/* Code in chunks */
+pre.r {
+    padding: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    word-wrap: normal;
+    border: solid 1px rgba(var(--main-text-color-rgba), 0.9);
+    background-color: rgba(var(--main-text-color-rgba), 0.9)
+}
+
+pre .sourceCode { /* normal code */
+    color: var(--pastel-purple);
+}
+
+pre .sourceCode .op{ /* operators ex pipe */
+    color: var(--brownish-grey);
+}
+
+pre .sourceCode .kw{ /* functions */
+    color: var(--pastel-orange);
+}
+
+/* Tables */
+.table {
+    width: auto !important; /* to be removed if we want a full page design */
+    border: none;
+    box-shadow: none;
+}
+
+table{ /* body */
+  font-family: var(--light-font-family);
+  border-collapse: collapse;
+  border: none; /* charcoal-grey */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th { /* columns names */
+  font-family: var(--light-font-family);
+  color: white;
+  background: var(--cerulean);
+}
+
+table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover { /* cells style */
+  background-color: transparent !important;
+  color: var(--main-text-color);
+}
+
+table.dataTable tbody tr, table.dataTable.display tbody tr {
+  background-color: transparent !important;
+  color: var(--main-text-color);
+}
+
+.dataTables_wrapper .dataTables_info {
+  color: var(--main-text-color) !important;
+}
+
+.dataTables_wrapper .dataTables_filter {
+  color: var(--main-text-color) !important;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    color: var(--brownish-grey);
+}
+
+.dataTables_wrapper .dataTables_filter input:focus {
+  outline: solid 2px var(--bubblegum-pink);
+}
+
+.dataTables_wrapper .dataTables_length {
+  color: var(--main-text-color) !important;
+}
+
+.dataTables_wrapper .dataTables_length select {
+  color: var(--brownish-grey);
+}
+
+.dataTables_wrapper .dataTables_paginate {
+  color: var(--main-text-color) !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous {
+  color: var(--main-text-color) !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.next {
+  color: var(--main-text-color) !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: var(--bubblegum-pink);
+  border: none !important;
+  color: white !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background: transparent;
+  color: var(--bubblegum-pink) !important;
+}
+
+/* Tabsets */
+.nav-tabs {
+  font-family: var(--light-font-family);
+}
+
+.nav-tabs > li > a {
+    color: var(--brownish-grey);
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    cursor: default;
+    background-color: transparent;
+    color: var(--main-text-color);
+    font-weight: bold;
+    border: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: : transparent;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-bottom-color: var(--bubblegum-pink);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+.tab-content>.tab-pane {
+    animation: fadein .8s;
+}
+
+/* TOC */
+#TOC::before { /* to set space before */
+  content: ' ';
+  display: block;
+  height: 185px;
+}
+
+#TOC.tocify {
+    border: none
+}
+
+#TOC.tocify::before {
+    margin-left: 5px;
+}
+
+#TOC li { /* sections appearance */
+    background-color: var(--background-color-page);
+}
+
+#TOC.tocify { /* sections appearance */
+    font-family: var(--thin-font-family);
+    color: var(--main-text-color);
+    background-color: var(--background-color-page);
+}
+
+#TOC li:hover { /* sections appearance */
+    font-family: var(--thin-font-family);
+    color: var(--bubblegum-pink);
+}
+
+#TOC.tocify .active { /* sections appearance */
+    font-family: var(--regular-font-family);
+    color: var(--bubblegum-pink);
+}

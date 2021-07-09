@@ -1,0 +1,48 @@
+---
+title: "Chargement de la font Roboto"
+author: "Margot Brard"
+date: "`r Sys.Date()`"
+output:
+  bookdown::html_document2:
+    base_format: rmarkdown::html_vignette
+    css: thinkr.css
+    includes:
+      in_header: header_hide.html
+vignette: >
+  %\VignetteIndexEntry{Chargement de la font Roboto}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+<script type="text/javascript">
+$(document).ready(function () {
+  window.initializeCodeFolding("show" === "hide");
+});
+</script>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE
+)
+```
+
+```{r}
+library(bdxmetroidentity)
+```
+
+# Charger la police de caractère Roboto
+
+La fonction `load_roboto_font()` permet de charger les 3 polices de caractère suivantes :
+
+- Roboto,
+- Roboto Light,
+- Roboto Thin.
+
+Si ces polices de caractères ne sont pas présentes sur le système de l'utilisateur, la fonction les installe.
+
+Cette fonction n'a besoin d'être lancée qu'une fois par session.
+
+```{r}
+load_roboto_font()
+extrafont::fonts() # fonts disponibles
+```

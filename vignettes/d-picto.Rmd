@@ -1,0 +1,49 @@
+---
+title: "Utilisation des pictogrammes"
+author: "Margot Brard"
+date: "`r Sys.Date()`"
+output:
+  bookdown::html_document2:
+    base_format: rmarkdown::html_vignette
+    css: thinkr.css
+    includes:
+      in_header: header_hide.html
+vignette: >
+  %\VignetteIndexEntry{Utilisation des pictogrammes}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+<script type="text/javascript">
+$(document).ready(function () {
+  window.initializeCodeFolding("show" === "hide");
+});
+</script>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE
+)
+```
+
+```{r}
+library(bdxmetroidentity)
+```
+
+# Utiliser un pictogramme
+
+La fonction `read_picto()` permet de lire les pictogrammes du package `{bdxmetroidentity}`. Elle admet un argument `name_picto` qui correspond au nom du pictogramme. Le pictogramme peut ensuite être utilisé dans des documents HTML ou apps Shiny.
+
+```{r fig.align='center'}
+car_picto <- read_picto(name_picto = "mag_car")
+grImport2::grid.picture(picture = car_picto)
+```
+
+La liste des pictogrammes disponibles dans le package `{bdxmetroidentity}` est présentée ci-dessous : 
+
+```{r echo=FALSE}
+stringr::str_replace_all(list.files(system.file("picto", package = "bdxmetroidentity")), ".svg", "") %>% 
+  tibble::as_tibble() %>% 
+  dplyr::rename("Nom" = value)
+```
+

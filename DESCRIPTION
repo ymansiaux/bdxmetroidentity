@@ -1,0 +1,41 @@
+Package: bdxmetroidentity
+Title: Bordeaux Metropole Graphic Design for Plots, R Markdown and
+        Shiny Apps
+Version: 0.4.0
+Authors@R: 
+    c(person(given = "Margot",
+             family = "Brard",
+             role = c("aut", "cre"),
+             email = "margot@thinkr.fr",
+             comment = c(ORCID = "0000-0001-6754-0659")),
+      person(given = "Cervan",
+             family = "Girard",
+             role = "aut",
+             email = "cervan@thinkr.fr",
+             comment = c(ORCID = "0000-0002-4816-4624")),
+      person(given = "Vincent",
+             family = "Guyader",
+             role = "aut",
+             email = "vincent@thinkr.fr",
+             comment = c(ORCID = "0000-0003-0671-9270")),
+      person(given = "ThinkR",
+             role = "cph"))
+Description: Produce ggplot2 plots, R markdown reports and shiny apps
+    according to the graphic needs of the datalab of Bordeaux Metropole.
+License: GPL (>= 3) + file LICENSE
+Imports: bslib, extrafont, ggplot2, glue, grDevices, grImport2,
+        magrittr, rmarkdown, rsvg, shiny, tibble, utils
+Suggests: bookdown, dplyr, DT, emo, knitr, stringr, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Remotes: hadley/emo
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-07-09 06:51:22 UTC; margotbrard
+Author: Margot Brard [aut, cre] (<https://orcid.org/0000-0001-6754-0659>),
+  Cervan Girard [aut] (<https://orcid.org/0000-0002-4816-4624>),
+  Vincent Guyader [aut] (<https://orcid.org/0000-0003-0671-9270>),
+  ThinkR [cph]
+Maintainer: Margot Brard <margot@thinkr.fr>
